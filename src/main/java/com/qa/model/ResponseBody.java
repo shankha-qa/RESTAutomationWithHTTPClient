@@ -3,6 +3,7 @@ package com.qa.model;
 import java.util.List;
 import java.util.ArrayList;
 
+//POJO - Plain Old Java Object
 public class ResponseBody {
 
     public int per_page;

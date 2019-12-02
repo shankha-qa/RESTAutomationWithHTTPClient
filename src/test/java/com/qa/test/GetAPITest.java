@@ -53,7 +53,7 @@ public class GetAPITest extends TestBase{
         Assert.assertEquals(Integer.parseInt(totalVal), 12, "'total' value is " + totalVal + ", instead of 12");
         String firstNameVal = TestUtil.getValueByJsonPath(responseJson, "/data[0]/first_name");
         System.out.println("Response Json , value of 'First Name' from the 1'st record-----> " + firstNameVal);
-        Assert.assertEquals(firstNameVal, "Michael", "'First Name' value is " + firstNameVal + ", instead of Michael");
+        Assert.assertEquals(firstNameVal, "George", "'First Name' value is " + firstNameVal + ", instead of Michael");
 
         Header[] headersArray = httpResponse.getAllHeaders();
         HashMap<String, String> allHeaders = new HashMap();
@@ -84,7 +84,7 @@ public class GetAPITest extends TestBase{
         Assert.assertEquals(Integer.parseInt(totalVal), 12, "'total' value is " + totalVal + ", instead of 12");
         String firstNameVal = TestUtil.getValueByJsonPath(responseJson, "/data[0]/first_name");
         System.out.println("Response Json , value of 'First Name' from the 1'st record-----> " + firstNameVal);
-        Assert.assertEquals(firstNameVal, "Michael", "'First Name' value is " + firstNameVal + ", instead of Michael");
+        Assert.assertEquals(firstNameVal, "George", "'First Name' value is " + firstNameVal + ", instead of Michael");
 
         Header[] headersArray = httpResponse.getAllHeaders();
         HashMap<String, String> allHeaders = new HashMap();
@@ -94,7 +94,7 @@ public class GetAPITest extends TestBase{
         System.out.println("Response Headers ----->" + allHeaders);
     }
 
-    @Test  // Just a tweak where it uses a Rest Response Model
+    @Test  // Just a tweak where it uses a Rest Response Model and calls getHTTP, which have been built with HTTPClientBuilder
     public void getTestWithResponseModel() throws IOException {
         restClient = new RestClient();
         httpResponse = restClient.getWithHttpClientBuilder(url);
@@ -106,11 +106,7 @@ public class GetAPITest extends TestBase{
         JSONObject responseJson = restResponse.getResponseBody();
         System.out.println("Response Json -----> " + responseJson);
 
-        Header[] headersArray = httpResponse.getAllHeaders();
-        HashMap<String, String> allHeaders = new HashMap();
-        for(Header header : headersArray) {
-            allHeaders.put(header.getName(), header.getValue());
-        }
+        HashMap<String, String> allHeaders = restResponse.getResponseHeader();
         System.out.println("Response Headers ----->" + allHeaders);
     }
 
@@ -122,12 +118,12 @@ public class GetAPITest extends TestBase{
         String responseString = EntityUtils.toString(httpResponse.getEntity(), "UTF-8"); // Uses EntityUtil to read the body
         System.out.println("Response String -----> " + responseString);
 
+        //Gson API - UnMarshaling or DeSerialization
         GsonBuilder builder = new GsonBuilder();
         Gson gson = builder.serializeNulls().setPrettyPrinting().create();
         ResponseBody deSerializedBody = gson.fromJson(responseString, ResponseBody.class);
         System.out.println(deSerializedBody);
         System.out.println(deSerializedBody.data.get(0).getFirst_name());
-
     }
 
     @AfterMethod
