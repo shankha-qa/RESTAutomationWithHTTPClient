@@ -3,6 +3,7 @@ package com.qa.client;
 import com.qa.util.TestUtil;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.*;
+import org.apache.http.client.protocol.HttpClientContext;
 import org.apache.http.entity.ContentType;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.entity.FileEntity;
@@ -126,6 +127,14 @@ public class RestClient {
         return httpResponse;
     }
 
+    //GET method - With sample Authentication
+    public CloseableHttpResponse getWithAuthentication(final String url, final HttpClientContext context) throws IOException {
 
+        CloseableHttpClient httpClient = HttpClients.createDefault(); //Create http connection
+        HttpGet httpGetRequest = new HttpGet(url); //http get Request
+        CloseableHttpResponse httpResponse = httpClient.execute(httpGetRequest, context); //execute with context having
+
+        return httpResponse;
+    }
 
 }
