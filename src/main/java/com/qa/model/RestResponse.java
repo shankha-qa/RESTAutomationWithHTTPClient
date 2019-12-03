@@ -30,9 +30,11 @@ public class RestResponse {
         int statusCode = httpResponse.getStatusLine().getStatusCode();
         this.statusCode = statusCode;
 
-        String responseString = EntityUtils.toString(httpResponse.getEntity(), "UTF-8");
-        JSONObject responseJson = new JSONObject(responseString);
-        this.responseJson = responseJson;
+        if (httpResponse.getEntity() != null) {
+            String responseString = EntityUtils.toString(httpResponse.getEntity(), "UTF-8");
+            JSONObject responseJson = new JSONObject(responseString);
+            this.responseJson = responseJson;
+        }
 
         Header[] headersArray = httpResponse.getAllHeaders();
         HashMap<String, String> allHeaders = new HashMap();

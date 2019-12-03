@@ -3,16 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c401cb25-5fe7-4d58-9fdc-2c3dc043044e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/base/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/base/TestBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/client/RestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/client/RestClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/config/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/model/ResponseBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/model/ResponseBody.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/util/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/util/TestUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/test/GetAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/test/GetAPITest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RESTAutomationWithHTTPClient-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/model/RestResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/model/RestResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -29,12 +23,12 @@
     </SUITE>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/base/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+            <state relative-caret-position="150">
+              <caret line="10" column="53" lean-forward="true" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/client/RestClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+            <state relative-caret-position="212">
+              <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#get#0;class#RestClient#0" />
@@ -56,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/qa/test/PostAPITest.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/qa/test/DeleteAPITest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+            <state relative-caret-position="283">
+              <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,22 +63,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/data/users_3.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/config/config.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="20" selection-start-column="20" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/util/TestUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="27" column="42" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="30">
+              <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -92,24 +74,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/model/RestResponse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="32" column="88" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="88" />
+            <state relative-caret-position="237">
+              <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#494#495#0" expanded="true" />
                 <element signature="e#529#530#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/qa/test/GetAPITest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2010">
-              <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -136,10 +106,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/restapi/TestBase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qa/base/TestBase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qa/model/RestResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qa/model/Data.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qa/config/config.properties" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/qa/model/ResponseBody.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -147,9 +114,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/qa/data/users_2.json" />
         <option value="$PROJECT_DIR$/src/main/java/com/qa/util/TestUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qa/data/users_3.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qa/client/RestClient.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/qa/test/PostAPITest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/qa/test/GetAPITest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qa/data/users_4.json" />
+        <option value="$PROJECT_DIR$/src/test/java/com/qa/test/PutAPITest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qa/client/RestClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qa/base/TestBase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qa/config/config.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/com/qa/test/DeleteAPITest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qa/model/RestResponse.java" />
       </list>
     </option>
   </component>
@@ -188,10 +161,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="821" />
+    <option name="height" value="816" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -201,7 +174,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -242,34 +214,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="qa" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RESTAutomationWithHTTPClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RESTAutomationWithHTTPClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="qa" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RESTAutomationWithHTTPClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RESTAutomationWithHTTPClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="qa" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RESTAutomationWithHTTPClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RESTAutomationWithHTTPClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="qa" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RESTAutomationWithHTTPClient" type="b2602c69:ProjectViewProjectNode" />
@@ -301,20 +246,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="RESTAutomationWithHTTPClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RESTAutomationWithHTTPClient" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575255203439" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575329379921" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -341,7 +282,42 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.GetAPITest">
+  <component name="RunManager" selected="TestNG.PutAPITest">
+    <configuration name="DeleteAPITest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RESTAutomationWithHTTPClient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qa.test" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.test.DeleteAPITest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeleteAPITest.deleteTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RESTAutomationWithHTTPClient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qa.test" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.test.DeleteAPITest" />
+      <option name="METHOD_NAME" value="deleteTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GetAPITest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RESTAutomationWithHTTPClient" />
       <extension name="coverage">
@@ -353,60 +329,6 @@
       <option name="PACKAGE_NAME" value="com.qa.test" />
       <option name="MAIN_CLASS_NAME" value="com.qa.test.GetAPITest" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GetAPITest.deSerializeExample" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RESTAutomationWithHTTPClient" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qa.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.qa.test" />
-      <option name="MAIN_CLASS_NAME" value="com.qa.test.GetAPITest" />
-      <option name="METHOD_NAME" value="deSerializeExample" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GetAPITest.getTestWithHeaders" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RESTAutomationWithHTTPClient" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qa.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.qa.test" />
-      <option name="MAIN_CLASS_NAME" value="com.qa.test.GetAPITest" />
-      <option name="METHOD_NAME" value="getTestWithHeaders" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GetAPITest.getTestWithResponseModel" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RESTAutomationWithHTTPClient" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qa.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.qa.test" />
-      <option name="MAIN_CLASS_NAME" value="com.qa.test.GetAPITest" />
-      <option name="METHOD_NAME" value="getTestWithResponseModel" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -430,13 +352,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PutAPITest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RESTAutomationWithHTTPClient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qa.test" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.test.PutAPITest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.GetAPITest" />
-        <item itemvalue="TestNG.GetAPITest.getTestWithHeaders" />
-        <item itemvalue="TestNG.GetAPITest.getTestWithResponseModel" />
-        <item itemvalue="TestNG.GetAPITest.deSerializeExample" />
+        <item itemvalue="TestNG.PutAPITest" />
         <item itemvalue="TestNG.PostAPITest" />
+        <item itemvalue="TestNG.GetAPITest" />
+        <item itemvalue="TestNG.DeleteAPITest" />
+        <item itemvalue="TestNG.DeleteAPITest.deleteTest" />
       </list>
     </recent_temporary>
   </component>
@@ -454,24 +393,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GetAPITest_(2) - 2019.12.01 at 18h 50m 45s.xml">
-      <configuration name="GetAPITest (2)" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="PostAPITest_postTestWithHeadersInXML_(1) - 2019.12.01 at 18h 50m 46s.xml">
-      <configuration name="PostAPITest.postTestWithHeadersInXML (1)" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="PostAPITest - 2019.12.01 at 18h 50m 52s.xml">
-      <configuration name="PostAPITest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="GetAPITest_deSerializeExample - 2019.12.01 at 18h 50m 59s.xml">
-      <configuration name="GetAPITest.deSerializeExample" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="GetAPITest - 2019.12.01 at 18h 51m 31s.xml">
-      <configuration name="GetAPITest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="GetAPITest_deSerializeExample - 2019.12.01 at 18h 52m 11s.xml">
-      <configuration name="GetAPITest.deSerializeExample" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="GetAPITest_getTestWithResponseModel - 2019.12.01 at 18h 52m 30s.xml">
       <configuration name="GetAPITest.getTestWithResponseModel" configurationId="TestNG" />
     </history-entry>
@@ -484,24 +405,36 @@
     <history-entry file="GetAPITest - 2019.12.01 at 18h 53m 20s.xml">
       <configuration name="GetAPITest" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="PutAPITest - 2019.12.02 at 13h 47m 41s.xml">
+      <configuration name="PutAPITest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PutAPITest_(1) - 2019.12.02 at 13h 48m 08s.xml">
+      <configuration name="PutAPITest (1)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PutAPITest_putTestWithHeadersFromFile - 2019.12.02 at 13h 48m 45s.xml">
+      <configuration name="PutAPITest.putTestWithHeadersFromFile" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DeleteAPITest - 2019.12.02 at 14h 04m 31s.xml">
+      <configuration name="DeleteAPITest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DeleteAPITest_(1) - 2019.12.02 at 14h 06m 07s.xml">
+      <configuration name="DeleteAPITest (1)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DeleteAPITest_deleteTest - 2019.12.02 at 14h 07m 30s.xml">
+      <configuration name="DeleteAPITest.deleteTest" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="816" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="RDE" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.5007153" side_tool="true" weight="0.39917696" />
-      <window_info anchor="bottom" id="Remote Cloud Desktop (Alpha)" />
-      <window_info anchor="bottom" id="Messages" weight="0.32872927" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32872927" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3314917" />
@@ -509,25 +442,25 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" weight="0.3297568" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.3297568" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="RDE" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.39917696" />
+      <window_info anchor="bottom" id="Remote Cloud Desktop (Alpha)" order="11" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32872927" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.3297568" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.3297568" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/TestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TestBase.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/json/json/20190722/json-20190722.jar!/org/json/JSONObject.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-442">
@@ -575,17 +508,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/model/Data.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="e#200#201#0" expanded="true" />
-            <element signature="e#232#233#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/model/Data.java" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -623,13 +546,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/config/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -657,16 +573,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/base/TestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/data/users_2.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -674,10 +580,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/util/TestUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/qa/test/PostAPITest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="27" column="42" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="42" />
+        <state relative-caret-position="90">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/data/users_4.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" lean-forward="true" selection-start-column="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/qa/test/GetAPITest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="82" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/qa/test/PutAPITest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="56" column="55" selection-start-line="56" selection-start-column="55" selection-end-line="56" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -686,12 +619,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/client/RestClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+        <state relative-caret-position="212">
+          <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#get#0;class#RestClient#0" />
             <element signature="method#get#1;class#RestClient#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/util/TestUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -703,10 +646,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/base/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="53" lean-forward="true" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/config/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/model/RestResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="32" column="88" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="88" />
+        <state relative-caret-position="237">
+          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#494#495#0" expanded="true" />
@@ -715,20 +675,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/qa/test/PostAPITest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/qa/test/DeleteAPITest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/qa/test/GetAPITest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2010">
-          <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
+        <state relative-caret-position="283">
+          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

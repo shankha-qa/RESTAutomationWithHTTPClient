@@ -2,9 +2,7 @@ package com.qa.client;
 
 import com.qa.util.TestUtil;
 import org.apache.http.HttpEntity;
-import org.apache.http.client.methods.CloseableHttpResponse;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.client.methods.HttpPost;
+import org.apache.http.client.methods.*;
 import org.apache.http.entity.ContentType;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.entity.FileEntity;
@@ -53,6 +51,7 @@ public class RestClient {
         return httpResponse;
     }
 
+    //POST method - body as String
     public CloseableHttpResponse post(final String url, final String entityString, final HashMap<String, String> headerMap)
             throws IOException {
 
@@ -68,6 +67,7 @@ public class RestClient {
 
     }
 
+    //POST method - body as File
     public CloseableHttpResponse post(final String url, final File entityFile, final HashMap<String, String> headerMap)
             throws IOException {
 
@@ -82,6 +82,7 @@ public class RestClient {
         return httpResponse;
     }
 
+    //POST method - body as String/File [Decided in Runtime]]
     public CloseableHttpResponse post(final String url, final Object obj, final ContentType type, final HashMap<String, String> headerMap)
             throws IOException {
 
@@ -96,4 +97,35 @@ public class RestClient {
 
         return httpResponse;
     }
+
+    //PUT method - body as String/File [Decided in Runtime]]
+    public CloseableHttpResponse put(final String url, final Object obj, final ContentType type, final HashMap<String, String> headerMap)
+            throws IOException {
+
+        CloseableHttpClient httpClient = HttpClients.createDefault();  //Create http connection
+        HttpPut httpPutRequest = new HttpPut(url); //http put Request
+        HttpEntity httpEntity = TestUtil.getHTTPEntity(obj, type);
+        httpPutRequest.setEntity(httpEntity); //Add body
+        if (headerMap != null) {
+            for (String entry : headerMap.keySet()) { //Add headers in the request one by one
+                httpPutRequest.addHeader(entry, headerMap.get(entry));
+            }
+        }
+        CloseableHttpResponse httpResponse = httpClient.execute(httpPutRequest); //execute
+
+        return httpResponse;
+    }
+
+    //DELETE method -
+    public CloseableHttpResponse delete(final String url)
+            throws IOException {
+        CloseableHttpClient httpClient = HttpClients.createDefault();  //Create http connection
+        HttpUriRequest httpDeleteRequest = RequestBuilder.delete(url).build();
+        CloseableHttpResponse httpResponse = httpClient.execute(httpDeleteRequest); //execute
+
+        return httpResponse;
+    }
+
+
+
 }
