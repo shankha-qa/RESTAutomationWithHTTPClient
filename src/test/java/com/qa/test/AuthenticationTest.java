@@ -1,18 +1,13 @@
 package com.qa.test;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import com.qa.base.TestBase;
 import com.qa.client.PromptAuth;
 import com.qa.client.RestClient;
-import com.qa.model.ResponseBody;
 import com.qa.model.RestResponse;
 import com.qa.util.TestUtil;
 import org.apache.http.Header;
-import org.apache.http.client.ResponseHandler;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.protocol.HttpClientContext;
-import org.apache.http.impl.client.BasicResponseHandler;
 import org.apache.http.util.EntityUtils;
 import org.json.JSONObject;
 import org.testng.Assert;
@@ -21,12 +16,16 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import java.io.IOException;
 import org.apache.commons.codec.binary.Base64;
+
+import java.security.KeyManagementException;
+import java.security.KeyStoreException;
+import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 
 public class AuthenticationTest extends TestBase{
 
     TestBase testBase;
-    String baseUrl, apiUrl, url;
+    String baseUrl, apiUrl, url, sslUrl;
     RestClient restClient;
     CloseableHttpResponse httpResponse;
 
@@ -36,6 +35,7 @@ public class AuthenticationTest extends TestBase{
         baseUrl = prop.getProperty("URL");
         apiUrl = prop.getProperty("serviceURL");
         url = baseUrl + apiUrl;
+        sslUrl = prop.getProperty("SSLURL");
     }
 
     @Test
@@ -96,6 +96,16 @@ public class AuthenticationTest extends TestBase{
             allHeaders.put(header.getName(), header.getValue());
         }
         System.out.println("Response Headers ----->" + allHeaders);
+    }
+
+    @Test  // Just a tweak where it uses a Rest Response Model and calls getHTTP, which have been built with HTTPClientBuilder
+    public void getTestWithResponseModel() throws NoSuchAlgorithmException, KeyStoreException,
+            KeyManagementException, IOException {
+        restClient = new RestClient();
+        httpResponse = restClient.getWithHttpsClientBuilder(sslUrl);
+
+        int statusCode = httpResponse.getStatusLine().getStatusCode();
+        System.out.println("Response Status Code -----> " + statusCode);
     }
 
     @AfterMethod

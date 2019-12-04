@@ -13,6 +13,9 @@ import org.apache.http.impl.client.HttpClients;
 
 import java.io.File;
 import java.io.IOException;
+import java.security.KeyManagementException;
+import java.security.KeyStoreException;
+import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 
 public class RestClient {
@@ -133,6 +136,17 @@ public class RestClient {
         CloseableHttpClient httpClient = HttpClients.createDefault(); //Create http connection
         HttpGet httpGetRequest = new HttpGet(url); //http get Request
         CloseableHttpResponse httpResponse = httpClient.execute(httpGetRequest, context); //execute with context having
+
+        return httpResponse;
+    }
+
+    //GET method - With SSL protected API's Automation
+    public CloseableHttpResponse getWithHttpsClientBuilder(final String url) throws NoSuchAlgorithmException, KeyStoreException,
+            KeyManagementException, IOException {
+
+        CloseableHttpClient httpClient = HttpsClientHelper.getHttpsClient(); //Create http connection
+        HttpGet httpGetRequest = new HttpGet(url); //http get Request
+        CloseableHttpResponse httpResponse = httpClient.execute(httpGetRequest); //execute
 
         return httpResponse;
     }
